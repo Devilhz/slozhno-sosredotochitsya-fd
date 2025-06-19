@@ -10,6 +10,7 @@
   --font-weight: 400;
   --font-weight-bold: 700;
   --main-font-size: 18px;
+  --main-text-title-color: #353430;
   --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-text-color: #f1b2ce;
   --title-decor-color: #000028;
@@ -19,5 +20,4 @@
   --color-hover: #ff007066;
   --menu-color: #ff0070;
   --decorated-element-color: #ff0070;
-  --section-title-color: #ff0070;
 }

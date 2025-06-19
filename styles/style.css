@@ -21,7 +21,7 @@
   padding: 10px;
   justify-items: end;
   position: relative;
-  block-size: 100vh;
+  min-height: 100vh;
   min-block-size: 668px;
   margin-bottom: 40px;
 }
@@ -94,6 +94,7 @@
   padding: 2px 14px 5px 11px;
 }
 
+
 .decorative-rec {
   color: var(--accent-color, #ff0070);
   position: absolute;
@@ -141,6 +142,9 @@ h3 {
   line-height: 23.4px;
   font-size: var(--main-font-size);
 }
+h4 {
+  font-weight: var(--font-weight, 400);
+}
 
 .section {
   display: grid;
@@ -168,7 +172,7 @@ h3 {
 }
 .main__text_title {
   display: block;
-  color: rgba(0, 0, 40, 1);
+  color: var(--title-decor-color);
   background-color: var(--accent-color, #ff0070);
 }
 .main__text {
@@ -328,19 +332,29 @@ h3 {
   }
 }
 .header__theme-menu-button:hover {
-  border: 1px var(--color-hover) solid;
+  outline: 1px var(--color-hover) solid;
 }
 .header__theme-menu-button:focus-visible {
   outline: none;
   border-bottom: 1px var(--menu-color) solid;
 }
+.header__theme-menu-button:focus {
+  outline: none;
+}
 .header__theme-menu-button_active {
-  border: 1px var(--menu-color) solid;
+  outline: 1px var(--menu-color) solid;
   pointer-events: none;
 }
 .text-links:hover {
   border-bottom: 1px var(--main-text-color) solid;
 }
+.text-links:focus {
+  outline: none;
+}
 .text-links:focus-visible {
+  outline: none;
   border: 1px var(--main-text-color) solid;
+}
+.header__theme-menu-button:active {
+  outline: 1px solid var(--decorated-element-color, #ff0070);
 }

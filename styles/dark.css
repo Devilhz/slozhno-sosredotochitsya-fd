@@ -24,3 +24,6 @@
   --section-title-color: #FF0070;
 }
 
+.theme-dark .rec {
+  display: inline-block;
+}
